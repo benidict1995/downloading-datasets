@@ -13,19 +13,23 @@ for index, column_header in enumerate(header_row):
     print(index, column_header)
 
 # Extract high temperatures.
-dates, highs = [], []
+dates, highs, lows = [], [], []
 for row in reader:
     current_date = datetime.strptime(row[2], "%Y-%m-%d")
     high = int(row[4])
+    low = int(row[5])
     dates.append(current_date)
     highs.append(high)
+    lows.append(low)
 
 # print(highs)
 
 # Plot the high temperatures.
 plt.style.use('seaborn-v0_8')
 fig, ax = plt.subplots()
-ax.plot(dates, highs, c='red')
+ax.plot(dates, highs, c='red', alpha=0.5)
+ax.plot(dates, lows, c='blue', alpha=0.5)
+ax.fill_between(dates, highs, lows, facecolor='blue', alpha=0.1)
 
 # Format plot
 ax.set_title("Daily High Temperatures, July 2021", fontsize = 24)

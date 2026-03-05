@@ -1,0 +1,29 @@
+{
+   "type":"FeatureCollection",
+   "metadata":{
+      "generated":1649052296000,
+      "url":"https://earthquake.usgs.gov/earthquakes/.../1.0_day.geojson",
+      "title":"USGS Magnitude 1.0+ Earthquakes, Past Day",
+      "status":200,
+      "api":"1.10.3",
+      "count":160
+   },
+   "features":[
+      {
+         "type":"Feature",
+         "properties":{
+            "mag":1.6,
+            "title":"M 1.6 - 27 km NNW of Susitna, Alaska"
+         },
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -150.7585,
+               61.7591,
+               56.3
+            ]
+         },
+         "id":"ak0224bju1jx"
+      }
+   ]
+}
