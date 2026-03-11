@@ -53,6 +53,12 @@ The activities in this repository are based on:
 
 ---
 
+## 📸 Screenshot
+
+![Dataset Download Example](image/output-1.png)
+
+---
+
 ## ⚠️ Disclaimer
 
 This repository is created for **learning and educational purposes only**.  
